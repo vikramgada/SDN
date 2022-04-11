@@ -28,9 +28,8 @@ feature:install odl-restconf odl-l2switch-switch odl-mdsal-apidocs
 
 feature:install odl-l2switch-all odl-l2switch-switch-ui
 
-feature:install odl-vtn-manager-neutron odl-neutron
-
--service odl-neutron-hostconfig-ovs
+feature:install odl-vtn-manager-neutron odl-neutron-
+service odl-neutron-hostconfig-ovs
 
 feature:install odl-ovsdb-library odl-restconf-all odl-ovsdb-southbound-api odl-ovsdb-southbound-impl odl-ovsdb-southbound-impl-rest
 
