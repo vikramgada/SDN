@@ -1,16 +1,10 @@
 #Ryu with mininet vm
-
 sudo apt-get install git
-
 sudo apt-get -y install git python3-pip python3-dev
-
 python3 --version
 pip3 --version
-
 sudo apt-get -y install python3-eventlet python3-routes python3-webob python3-paramiko
-
 mkdir sdn
-
 cd sdn/
 git clone --depth=1 https://github.com/osrg/ryu.git
 cd ryu/
