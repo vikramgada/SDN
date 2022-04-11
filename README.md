@@ -1,3 +1,37 @@
+# ODL
+sudo apt install openjdk-8-jdk openjdk-8-jre
+
+java -version
+
+Setup JAVA_HOME and JRE_HOME Variable
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+
+Step 2 : STEP 2: Download distribution-karaf-0.6.0-Carbon.zip and unzip it Move to the directory distribution-karaf-0.6.0-Carbon and type: ./bin/karaf
+feature:install odl-dlux-core
+
+feature:install odl-dluxapps-nodes
+
+feature:install odl-dluxapps-topology
+
+feature:install odl-dluxapps-yangui
+
+feature:install odl-dluxapps-yangvisualizer
+
+feature:install odl-dluxapps-yangman
+
+feature:install odl-l2switch-all
+
+feature:install odl-restconf odl-l2switch-switch odl-mdsal-apidocs 
+
+feature:install odl-l2switch-all odl-l2switch-switch-ui
+
+feature:install odl-vtn-manager-neutron odl-neutron-service odl-neutron-hostconfig-ovs
+
+feature:install odl-ovsdb-library odl-restconf-all odl-ovsdb-southbound-api odl-ovsdb-southbound-impl odl-ovsdb-southbound-impl-rest
+
 # wireshark
 sudo add-apt-repository universe
 
