@@ -56,3 +56,24 @@ ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -X mininet@192.1
 sudo mn --controller=remote,ip=192.168.142.131 --topo tree,depth=3
 
 In above command ip is of ubuntu machine you can get by command  ip r    (  do  in new terminal to get the ip) 
+
+# ONOS
+
+sudo apt install openjdk-8-jdk openjdk-8-jre
+java -version
+sudo nano /etc/environment
+Type in the first line
+JAVA_HOME=”/usr/lib/jvm/java-8-openjdk-amd64”
+JRE_HOME=”/usr/lib/jvm/java-8-openjdk-amd64/jre”
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+unzip onos-1.12.0.zip
+cd onos-1.12.0/
+cd bin
+ls
+./onos-service 
+
+Go to browser in localhost:8181/onos/ui/index.html
+username - onos
+Password - rocks 
+
