@@ -118,11 +118,7 @@ sudo chmod 777 /var/lib/floodlight
 
 java -jar target/floodlight.jar
 
-Don’t close the running of jar
-
-And Open new terminal for mininet
-
-connect to mininet vm.
+Don’t close the running of jar And Open new terminal for mininet connect to mininet vm.
 
 ssh -X mininet@192.168.142.130
 
