@@ -90,3 +90,47 @@ Go to browser in localhost:8181/onos/ui/index.html
 username - onos
 Password - rocks 
 
+
+# Floodlight
+ls
+
+unzip floodlight-20220410T130507Z-001.zip 
+
+sudo apt install openjdk-8-jdk openjdk-8-jre
+
+sudo nano /etc/environment
+
+JAVA_HOME=”/usr/lib/jvm/java-8-openjdk-amd64”
+
+JRE_HOME=”/usr/lib/jvm/java-8-openjdk-amd64/jre”
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+
+sudo apt install ant
+
+ant
+
+sudo mkdir /var/lib/floodlight
+
+sudo chmod 777 /var/lib/floodlight
+
+java -jar target/floodlight.jar
+
+Don’t close the running of jar
+
+And Open new terminal for mininet
+
+connect to mininet vm.
+
+ssh -X mininet@192.168.142.130
+
+sudo mn --controller=remote,ip=192.168.142.128 --topo=single,3
+
+pingall
+
+The ip address of the above remote if your ubuntu machine ip You have to open a 3rd terminal (new terminal) and wite ip r
+
+http://localhost:8080/ui/index.html
+
