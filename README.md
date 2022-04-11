@@ -1,3 +1,13 @@
+# wireshark
+sudo add-apt-repository universe
+
+sudo apt install wireshark
+
+If your wireshark start option is not enable do :
+sudo dpkg-reconfigure wireshark-common
+
+sudo chmod +x /usr/bin/dumpcap
+
 # batch script eg
 https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 # Ryu with mininet vm
