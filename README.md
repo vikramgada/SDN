@@ -32,6 +32,52 @@ feature install odl-vtn-manager-neutron odl-neutron-service odl-neutron-hostconf
 
 feature:install odl-ovsdb-library odl-restconf-all odl-ovsdb-southbound-api odl-ovsdb-southbound-impl odl-ovsdb-southbound-impl-rest
 
+ODL
+controller at URL http://localhost:8181/index.html
+Default Password is admin admin
+
+OVS
+
+sudo /etc/init.d/openvswitch-switch start
+
+sudo /etc/init.d/openvswitch-switch status
+
+sudo ovs-vsctl show
+
+sudo apt-get install openvswitch-switch
+
+sudo apt install net-tools
+
+netstat -a | grep 6653
+
+netstat -a | grep 6640
+
+ip r
+
+sudo ovs-vsctl set-manager tcp:192.168.101.128 :6640  (give ip of ubuntu)
+
+sudo ovs-vsctl show
+
+Adding bridge
+
+sudo ovs-vsctl add-br br0
+
+sudo ovs-vsctl set-fail-mode br0 secure
+
+ifconfig(my eth is ens33)
+
+sudo ovs-vsctl add-port br0 ens33
+
+sudo ovs-vsctl show
+
+sudo ovs-vsctl set-controller br0 tcp:192.168.101.128:6653
+
+sudo ovs-vsctl show
+
+sudo ovs-ofctl show br0 -OOpenFlow13
+
+controller at URL http://localhost:8181/index.html
+
 # wireshark
 sudo add-apt-repository universe
 
