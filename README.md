@@ -38,6 +38,8 @@ sudo python3 setup.py install  ( Do if you are not able to view ryu-manager)
 
 ryu-manager --version
 
+ryu-manager --observe-links ryu.app.simple_switch ryu.app.gui_topology.gui_topology 
+
 mininet steps
 
 download VM https://github.com/mininet/mininet/releases/ 
