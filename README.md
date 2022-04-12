@@ -88,6 +88,8 @@ sudo dpkg-reconfigure wireshark-common
 
 sudo chmod +x /usr/bin/dumpcap
 
+http://www-scf.usc.edu/~csci571/Special/HTTP/simple1.html
+
 # batch script eg
 https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 # Ryu with mininet vm
